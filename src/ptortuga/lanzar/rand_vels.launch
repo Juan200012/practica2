@@ -1,0 +1,11 @@
+<launch>
+  <include
+    file="$(find ptortuga)/lanzar/rand_vel_turtle.launch"
+  />
+  <node
+    pkg="ptortuga"
+    type="subpose"
+    name="pose_subscriber"
+    output="screen"
+  />
+</launch>

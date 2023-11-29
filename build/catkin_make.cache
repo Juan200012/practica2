@@ -1,0 +1,2 @@
+message_tests:ptortuga
+-DCATKIN_DEVEL_PREFIX=/home/ubunturos/practica2/devel -DCMAKE_INSTALL_PREFIX=/home/ubunturos/practica2/install -G Unix Makefiles

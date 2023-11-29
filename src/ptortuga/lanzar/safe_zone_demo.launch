@@ -1,0 +1,8 @@
+<launch>
+<arg  name="run_node_A" default="false" />
+<arg  name="run_node_B" default="false" />
+
+<node pkg="turtlesim" name="turtlesim" type="turtlesim_node" output="screen"/>
+<node pkg="ptortuga" name="smartturtle" type="smartturtle" if="$(arg run_node_A)"/>
+<node pkg="ptortuga" name="safezone" type="safezone" if="$(arg run_node_B)"/>
+</launch>

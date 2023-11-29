@@ -1,0 +1,8 @@
+<launch>
+<arg  name="run_node_A" default="false" />
+<arg  name="run_node_B" default="false" />
+
+<node pkg="turtlesim" name="turtlesim" type="turtlesim_node" output="screen"/>
+<node pkg="ptortuga" name="pubvel" type="pubvel" if="$(arg run_node_A)"/>
+<node pkg="turtlesim" name="sim" type="turtle_teleop_key" if="$(arg run_node_B)" output="screen"/>
+</launch>

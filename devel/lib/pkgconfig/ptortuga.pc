@@ -1,0 +1,8 @@
+prefix=/home/ubunturos/practica2/devel
+
+Name: ptortuga
+Description: Description of ptortuga
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

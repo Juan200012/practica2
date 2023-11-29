@@ -1,0 +1,14 @@
+<launch>
+  <node
+    pkg="turtlesim"
+    type="turtlesim_node"
+    name="turtlesim"
+    respawn="true"
+  />
+  <node
+    pkg="ptortuga"
+    type="pubvel"
+    name="pubvel"
+    required="true"
+  />
+</launch>
